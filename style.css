@@ -62,8 +62,33 @@
 
 .card h1 {
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
+    display: inline-block;
+}
+
+.card .header{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .header button{
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card .header button:hover{
+    color: var(--acc-color);
+}
+
+.card .header button:active{
+    font-size: 22px;
 }
 
 .card .inputBox {
@@ -120,12 +145,14 @@
 .card .inputBox .optBox {
     width: 165px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     /* background: red; */
     align-items: center;
+
 }
 
 .card .inputBox .optBox input {
+    margin: auto;
     width: 16px;
 }
 
@@ -136,6 +163,29 @@
 .card .inputBox .optBox input[type="radio"]{
     accent-color: var(--acc-color);
 }
+
+.card .inputBox .optBox ul{
+    list-style: none !important;
+}
+
+.card .inputBox .optBox ul li{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.card .inputBox .optBox ul li label{
+    padding-left: 4px;
+}
+
+
+.card .inputBox .optBox ul li::marker{
+    display: none;
+}
+
+
 
 
 /* OUTPUT BOX  */

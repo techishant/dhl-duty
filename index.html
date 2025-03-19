@@ -32,7 +32,11 @@
 
         <div class="card-wrapper">
             <div class="card">
-                <h1>Duty Calculator </h1>
+                <div class="header">
+
+                    <h1>Duty Calculator </h1><button onclick="calculateValues()">&#8634</button>
+                </div>
+
                 <div class="inputBox">
                     <label for="dutyName">Name</label>
                     <select name="" value="0" id="dutyNameSelector">
@@ -66,12 +70,20 @@
                 <div class="inputBox">
                     <label>GST</label>
                     <div class="optBox">
-                        <label for="gst_5">5%</label>
-                        <input type="radio" name="GSToption" id="gst_5" value="5">
-                        <label for="gst_12">12%</label>
-                        <input type="radio" name="GSToption" id="gst_12" value="12">
-                        <label for="gst_18">18%</label>
-                        <input type="radio" name="GSToption" id="gst_18" value="18" checked>
+                        <ul>
+                            <li>
+                                <input type="radio" name="GSToption" id="gst_5" value="5">
+                                <label for="gst_5">5%</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="GSToption" id="gst_12" value="12">
+                                <label for="gst_12">12%</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="GSToption" id="gst_18" value="18" checked>
+                                <label for="gst_18">18%</label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <hr class="hor-bar">
